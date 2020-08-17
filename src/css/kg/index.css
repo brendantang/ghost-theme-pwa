@@ -1,0 +1,6 @@
+/* mandatory classes for styling built-in ghost dynamic content
+ * see: https://ghost.org/docs/api/v3/handlebars-themes/editor/ 
+ */
+
+@import 'kg_image.css';
+@import 'kg_bookmark.css';

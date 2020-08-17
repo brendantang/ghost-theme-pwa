@@ -1,0 +1,25 @@
+.kg-image-card {
+  border: 1px solid;
+}
+
+.kg-width-wide {
+  max-width: 48rem;
+}
+
+.kg-width-full {
+  max-width: 90vw;
+}
+
+.kg-gallery-container {
+  border: 1px solid;
+}
+
+.kg-gallery-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.kg-gallery-image {
+  margin-left: 1em;
+}

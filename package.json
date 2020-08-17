@@ -1,5 +1,5 @@
 {
-  "name": "wisp",
+  "name": "pwa-ghost-theme",
   "version": "0.0.1",
   "description": "boilerplate for ghost theme development",
   "repository": "https://github.com/brendantang/wisp",
@@ -13,7 +13,10 @@
     "ghost-theme"
   ],
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "gscan": "^3.5.6",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
     "turbolinks": "^5.2.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
@@ -22,11 +25,12 @@
     "posts_per_page": 5
   },
   "scripts": {
-    "build": "yarn zip && yarn gscan_zip",
+    "build": "yarn webpack && yarn postcss && yarn zip && yarn gscan_zip",
     "gscan": "gscan .",
-    "zip": "rm -f dist/wisp.zip && zip -r dist/wisp.zip . -x 'dist/*' 'node_modules/*' '.git/*' '.git*' '.DS_Store'",
-    "gscan_zip": "gscan -z dist/wisp.zip",
-    "webpack": "webpack"
+    "zip": "rm -f dist/pwa-theme.zip && zip -r dist/pwa-theme.zip . -x 'dist/*' 'node_modules/*' '.git/*' '.git*' 'src/*' '.DS_Store'",
+    "gscan_zip": "gscan -z dist/pwa-theme.zip",
+    "webpack": "webpack",
+    "postcss": "postcss src/css/index.css > assets/css/screen.css"
   },
   "dependencies": {}
 }
