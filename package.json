@@ -1,0 +1,27 @@
+{
+  "name": "wisp",
+  "version": "0.0.1",
+  "description": "boilerplate for ghost theme development",
+  "repository": "https://github.com/brendantang/wisp",
+  "author": {
+    "name": "brendan tang",
+    "email": "b@brendantang.net"
+  },
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "ghost-theme"
+  ],
+  "devDependencies": {
+    "gscan": "^3.5.6"
+  },
+  "config": {
+    "posts_per_page": 5
+  },
+  "scripts": {
+    "build": "yarn zip && yarn gscan_zip",
+    "gscan": "gscan .",
+    "zip": "rm -f dist/wisp.zip && zip -r dist/wisp.zip . -x 'dist/*' 'node_modules/*' '.git/*' '.git*' '.DS_Store'",
+    "gscan_zip": "gscan -z dist/wisp.zip"
+  }
+}

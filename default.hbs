@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{@site.lang}}">
+
+<head>
+  <meta charset="utf8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>{{meta_title}}</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+
+  {{ghost_head}}
+</head>
+
+<body>
+  {{> "site-header"}}
+
+  {{> "site-navigation"}}
+
+  {{{body}}}
+
+  {{ghost_foot}}
+</body>
+
+</html>
+

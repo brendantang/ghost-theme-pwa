@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{#author}}
+
+  <h1>{{name}}</h1> 
+
+  {{#if location}}
+    <aside>location: {{location}}</aside>
+  {{/if}}
+  
+  {{#if profile_image}}
+    <img src="{{profile_image}}" />
+  {{/if}}
+
+  {{#if bio}}
+    <section>{{bio}}</section>
+  {{/if}}
+
+  <nav>
+    {{#if website}}
+      <li>site: {{website}}</li>
+    {{/if}}
+    {{#if twitter}}
+      <li>twitter: {{twitter}}</li>
+    {{/if}}
+    {{#if facebook}}
+      <li>facebook: {{facebook}}</li>
+    {{/if}}
+  </nav>
+
+
+{{/author}}
+
+{{#if posts}}
+  <h2>posts by {{name}}</h2> 
+  {{> "post-list"}}
+{{/if}}
+

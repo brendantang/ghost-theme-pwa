@@ -1,0 +1,24 @@
+/* mandatory classes for styling figures.
+ * see: https://ghost.org/docs/api/v3/handlebars-themes/editor/?_ga=2.39530155.924357277.1597634323-1365643562.1597288146 */
+
+.kg-width-wide { }
+
+.kg-width-full {}
+
+.kg-gallery-container {}
+
+.kg-gallery-row {}
+
+.kg-gallery-image {}
+
+.kg-bookmark-card {}
+
+.kg-bookmark-container {}
+.kg-bookmark-content {}
+.kg-bookmark-title {}
+.kg-bookmark-description {}
+.kg-bookmark-metadata {}
+.kg-bookmark-icon {}
+.kg-bookmark-author {}
+.kg-bookmark-publisher {}
+.kg-bookmark-thumbnail {}
