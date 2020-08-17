@@ -2,5 +2,5 @@
  * see: https://ghost.org/docs/api/v3/handlebars-themes/editor/ 
  */
 
-@import 'kg_image.css';
-@import 'kg_bookmark.css';
+@import "kg_image.css";
+@import "kg_bookmark.css";

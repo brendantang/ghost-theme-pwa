@@ -1,0 +1,13 @@
+# assets is the build dir for webpack and postcss:
+assets 
+
+# the build dir for the .zip
+dist
+
+# no stable support yet for handlebars
+.hbs
+
+yarn.lock
+yarn-error.lock
+LICENSE
+node_modules

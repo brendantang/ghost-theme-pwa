@@ -7,10 +7,11 @@ It uses a lot of the features of "modern" ui development while sticking with Gho
 
 I see this as a good alternative to using Ghost as a [headless CMS](https://ghost.org/docs/concepts/front-end/) and relying on a framework like React or Gatsby.
 Those are good options, but forgoing Ghost's Handlebars integration means:
-  - You are responsible for making sure your front-end is rebuilt every time an author makes a change from the Ghost admin panel.
-    - This is easily achievable using some combination of [webhooks](https://ghost.org/docs/api/v3/webhooks/) and server-side scripting or "serverless functions."
-  - However, you also become responsible for providing real-time feedback on build status.
-    You need to handle the case where your build fails, or where it takes longer than your user expects, or where your user's cached version of the site conflicts with the up-to-date build.
+
+- You are responsible for making sure your front-end is rebuilt every time an author makes a change from the Ghost admin panel.
+  - This is easily achievable using some combination of [webhooks](https://ghost.org/docs/api/v3/webhooks/) and server-side scripting or "serverless functions."
+- However, you also become responsible for providing real-time feedback on build status.
+  You need to handle the case where your build fails, or where it takes longer than your user expects, or where your user's cached version of the site conflicts with the up-to-date build.
 
 There are other good reasons to use a statically-built front end.
 But if you just want snappy page renders and convenient npm tools, that's easily achievable within the Ghost handlebars theming system, which "just works" with minimal extra effort.
