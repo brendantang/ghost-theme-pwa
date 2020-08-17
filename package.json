@@ -14,10 +14,13 @@
   ],
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "eslint": "^7.7.0",
     "gscan": "^3.5.6",
     "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
     "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
     "turbolinks": "^5.2.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
@@ -32,7 +35,8 @@
     "gscan_zip": "gscan -z dist/pwa-theme.zip",
     "webpack": "webpack",
     "postcss": "postcss src/css/index.css > assets/css/screen.css",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "lint": "eslint . && stylelint '**/*.css'"
   },
   "dependencies": {}
 }

@@ -21,8 +21,8 @@ But if you just want snappy page renders and convenient npm tools, that's easily
 - [x] Turbolinks for snappy rendering
 - [x] Webpack for javascript bundling/minification
 - [x] Postcss for CSS bundling/minification
-- [ ] Prettier for formatting
-- [ ] linting
+- [x] Prettier for formatting
+- [x] linting with eslint and stylelint
 
 # Usage
 

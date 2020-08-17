@@ -5,7 +5,7 @@ assets
 dist
 
 # no stable support yet for handlebars
-.hbs
+*.hbs
 
 yarn.lock
 yarn-error.lock
