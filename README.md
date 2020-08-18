@@ -24,21 +24,22 @@ But if you just want snappy page renders and convenient npm tools, that's easily
 - [x] Prettier for formatting
 - [x] linting with eslint and stylelint
 
-# Usage
+## Using the template
 
-`yarn build` zips the theme into dist/wisp.zip, then you can upload the theme from Ghost admin
-
-# Developing
+> If you just want to use the theme, you download https://github.com/brendantang/ghost-theme-pwa/raw/master/dist/pwa-theme.zip and upload it to your Ghost site from the admin panel.  
+> But you probably want to use this theme as a starting point for development!
 
 If you don't already have a local instance of Ghost running, set one up according to the [Ghost docs](https://ghost.org/docs/install/local/)
 
 Use this repo as a template and clone it into `<path-to-local-ghost>/content/themes/<your-new-theme>`.
 
-You may need to run `ghost restart` to get the admin panel to show the repo as one of the theme options you can activate.
+You will need to run `ghost restart` to get the admin panel to show the repo as one of the theme options you can activate.
 
-Once the theme you're developing is active, Ghost should reflect changes you make to existing files on page reload.
-You will have to run `ghost restart` whenever you rename a file or add a new one.
+Once the theme you're developing is active, Ghost should reflect changes you make to existing template files on page reload.
+However, the styles and javascript require a build step.
 
-# references
+The `dev` script will watch `src/` for changes and automatically rebuild your bundles to `assets/`, but you will still have to run `ghost restart` to see the changes reflected on your site!
 
-- https://ghost.org/docs/install/local/#developing-themes
+Run `yarn prettier` to format in place, `yarn lint` to lint both css and javascript, and `yarn gscan` to invoke the Ghost test suite to make sure your theme is compatible with Ghost 3.
+
+Finally, tun `yarn build` to build your assets and zip up your theme to `dist/`.
